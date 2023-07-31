@@ -10,26 +10,30 @@
             <asp:ListItem>Colaborador 4</asp:ListItem>
         </asp:DropDownList></p>
     <p>
-        Causas del ausentismo<br/><asp:DropDownList ID="DropDownList2" runat="server" ItemType="string">
-            <asp:ListItem Value="0">Faltó a sus labores sin permiso previo</asp:ListItem>
-            <asp:ListItem Value="1">Se le concedió permiso</asp:ListItem>
-            <asp:ListItem Value="2">Se presentó con retardo</asp:ListItem>
-            <asp:ListItem Value="3">Se le suspende como medida disciplinaria</asp:ListItem>
-            <asp:ListItem Value="4">Toma a cuenta de vacaciones</asp:ListItem>
-        </asp:DropDownList></p>
-
+        Causas del ausentismo<br/>
+        <asp:CheckBox ID="CheckBox2" runat="server" Text="Faltó a sus labores sin permiso previo" AutoPostBack="True" /><br />
+        <asp:CheckBox ID="CheckBox3" runat="server" Text="Se le concedió permiso" AutoPostBack="True" /><br />
+        <asp:CheckBox ID="CheckBox4" runat="server" Text="Se presentó con retardo" AutoPostBack="True" /><br />
+        <asp:CheckBox ID="CheckBox5" runat="server" Text="Se le suspende como medida disciplinaria" AutoPostBack="True" /><br />
+        <asp:CheckBox ID="CheckBox6" runat="server" Text="Toma a cuenta de vacaciones" AutoPostBack="True" />
+    </p>
+    
     <p>
         Dias<br/>
-        <asp:TextBox ID="TextBox2" runat="server" Enabled="False"></asp:TextBox>
-        </p>
-     <p>
-        Goce de sueldo<br/>
-        <asp:CheckBox ID="Activado" runat="server" Text="Activado" />
-        </p>
+        <asp:TextBox ID="TextBox2" runat="server" Enabled="False" AutoPostBack="True" EnableTheming="False" EnableViewState="False"></asp:TextBox>
+        
+    </p>
+   <p>
+       Goce de sueldo<br/>
+        <asp:CheckBox ID="CheckBox1" runat="server" Text="Activado" AutoPostBack="True" />
+   </p>    
+            
     <p>
         Mitos y Observaciones<br/>
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        </p>
+
+    </p>
+
     <p>
         Pendiente<br/><asp:DropDownList ID="DropDownList3" runat="server">
             <asp:ListItem>Pendiente por Lider</asp:ListItem>
@@ -41,4 +45,5 @@
             <asp:ListItem>Autorizada</asp:ListItem>
             <asp:ListItem>Pendiente</asp:ListItem>
         </asp:DropDownList></p>
+    <a class="nav-link" runat="server" href="~/Contact">&laquo; Regresar </a>
 </asp:Content>

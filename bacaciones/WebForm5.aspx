@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm5.aspx.cs" Inherits="bacaciones.WebForm5" %>
+﻿<%@ Page Title="Agregar Colaborador" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm5.aspx.cs" Inherits="bacaciones.WebForm5" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h3>Control de Accesos</h3><br />
      <p>
@@ -10,8 +10,8 @@
             <asp:ListItem>&nbspEntrada principal(Omigenomics)</asp:ListItem>
             <asp:ListItem>&nbspPlanta alta (Omigenomics)</asp:ListItem>
         </asp:CheckBoxList>
-        <asp:CheckBox runat="server"></asp:CheckBox>
-            <asp:TextBox runat="server">Otras</asp:TextBox>
+        <asp:CheckBox runat="server" Text="Otras"></asp:CheckBox>
+            &nbsp&nbsp<asp:TextBox runat="server"></asp:TextBox>
     </p>
      <p>
         <a class="nav-link" runat="server" href="~/WebForm4"> &laquo; Atrás</a><a class="nav-link" runat="server" href="~/WebForm6">Siguiente      &raquo;</a>

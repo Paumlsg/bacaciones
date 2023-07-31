@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="bacaciones.WebForm2" %>
+﻿<%@ Page Title="Agregar Colaborador" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="bacaciones.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
      <h2>Agregar Colaborador</h2>
     <br/>
@@ -9,18 +9,18 @@
     </p>
     <p>
         2. ¿Se trata de un gerente?<br/>
-        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-            <asp:ListItem>Si</asp:ListItem>
-            <asp:ListItem>No</asp:ListItem>
-        </asp:CheckBoxList>
+        <asp:CheckBox ID="CheckBox1" runat="server" Text="Si" AutoPostBack="True" /><br />
+        <asp:CheckBox ID="CheckBox2" runat="server" Text="No" AutoPostBack="True" />
     </p>
+
     <p>
         3. ¿El nuevo ingreso va a requerir correo electrónico empresarial?<br/>
-        <asp:CheckBoxList ID="CheckBoxList2" runat="server">
-            <asp:ListItem>Si</asp:ListItem>
-            <asp:ListItem>No</asp:ListItem>
-        </asp:CheckBoxList>
+        <asp:CheckBox ID="CheckBox3" runat="server" Text="Si" AutoPostBack="True" /><br />
+        <asp:CheckBox ID="CheckBox4" runat="server" Text="No" AutoPostBack="True" />
+
     </p>
+        
+    
     <p>
         4. Correo electrónico de la empresa<br/>
         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
@@ -87,6 +87,9 @@
     <p>
         9. Fecha de Ingreso<br/>
         <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+    </p>
+    <p>
+        <a class="nav-link" runat="server" href="~/About">&laquo; Atrás</a>
     </p>
     <p>
         <a class="nav-link" runat="server" href="~/WebForm3">Siguiente      &raquo;</a>

@@ -3,9 +3,11 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
         <br/>
-        <h2 id="title"><%: Title %>.</h2>
+        <h2 id="title"><%: Title %></h2>
         <br/>
-        <h3>Lista de Colaboradores</h3>
-        <p>En este apartado se observa la lista de los colaboradores</p>
+        <p>En este apartado se observa la lista de los colaboradores.</p>
+        <p>
+        <a class="nav-link" runat="server" href="~/WebForm2">Agregar colaborador &raquo;</a>
+    </p>
     </main>
 </asp:Content>

@@ -13,5 +13,10 @@ namespace bacaciones
         {
 
         }
+
+        protected void imgImagenl_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("~/WebForm8.aspx");
+        }
     }
 }

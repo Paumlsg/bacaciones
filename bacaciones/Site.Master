@@ -52,6 +52,9 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Solicitudes</a></li>
                     </ul>
                 </div>
+                <div> 
+                    <asp:ImageButton ID="imgImagenl" runat="server" ImageUrl="~/Imagenes/logout.png" HorizontalAlignment="Right" Width="30" Height="30" OnClick="imgImagenl_Click"/>
+                </div>
             </div>
         </nav>
         <div class="container body-content">
